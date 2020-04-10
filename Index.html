@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <script src="Index.js"></script>
+</head>
+<style>
+  body {
+    background: url('https://mh-2-stockagency.panthermedia.net/media/previews/0023000000/23870000/23870256_high.jpg');
+    background-size: 100k 100k; } 
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: grey; 
+}
+td, th {
+  border: 1px solid #dddddd;
+  color: #000;
+  text-align: left;
+  padding: 8px;
+ 
+}
+ 
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  </style>
+<body onload="app.FetchAll()">
+  <style>
+    h1 {color:red;}
+    .button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}  
+label {
+color: white;
+padding: 8px;
+font-family: Arial;
+}
+
+ </style>
+ 
+  <!--  <h1>Learn html</h1>
+    <input type="submit"onclick="tryme()" value="clickme">
+    <button onclick="hello()">Say Hello</button> -->
+   <h1>  UsersMaster </h1>
+    <hr>
+    <label >Id<input type="text" name="id" id="id"></label>
+    <br></br>
+    <label >Name<input type="text" name="name" id="name"></label><br></br>
+    <label >EmailId<input type="text" name="emailId" id="emailId"></label><br></br>
+    <button type="submit" id="Button" onclick="app.SaveAndUpdate()">Save</button>
+    <hr>
+    <p id="box"></p> 
+
+</body>
+</html>
